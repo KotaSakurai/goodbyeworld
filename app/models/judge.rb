@@ -1,3 +1,3 @@
 class Judge < ApplicationRecord
-	belongs_to :images
+	belongs_to :image
 end
