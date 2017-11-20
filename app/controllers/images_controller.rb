@@ -1,12 +1,19 @@
 class ImagesController < ApplicationController
     def index
-        @image = Image.all
+      @images = Image.all
     end
 
     def create
+      @image = Image.new(image_params)
+      if @image.save
+        redirect_to root_path
+      else
+        render :new
+      end
     end
 
     def new
+      @image = Image.new
     end
 
     def edit
@@ -19,7 +26,12 @@ class ImagesController < ApplicationController
     end
 
     def destroy
+
     end
-    
+
+    private
+    def image_params
+      params.require(:image).permit(:name, :image)
+    end
 
 end
