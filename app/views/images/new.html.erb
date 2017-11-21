@@ -1,7 +1,9 @@
-<h1>投稿画面</h1>
+<h1 class="center">投稿画面</h1>
 
+<div class="center">
 <%= form_for @image do |image| %>
-名前 : <%= image.text_field :name %>
-写真 : <%= image.file_field :image,accept: 'image/jpeg' %>
+<p>名前 : <%= image.text_field :name %></p>
+<p>写真 : <%= image.file_field :image %></p>
 <%= image.submit "登録する" %>
 <% end %>
+</div>
