@@ -1,8 +1,10 @@
 <h1 class="center">Goodbye World!!</h1>
 <h3 class="center">別れたカップルのLINEスクショ投稿サイトです</h3>
 
-<div class="center">
-  <%= link_to '投稿する',new_image_url %>
+<div class="center mg-b">
+  <button type="button" class="btn btn-success">
+    <%= link_to '投稿する',new_image_url, class: "clrW"%>
+  </button>
 </div>
 <% @images.each do |i| %>
   <div class="image_contents">

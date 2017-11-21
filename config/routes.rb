@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   root 'images#index'
   resources :images
-  resources :judges,only:[:index ,:create]
+  resources :judges, only:[:index ,:create]
 end
