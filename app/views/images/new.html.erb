@@ -1,0 +1,7 @@
+<h1>投稿画面</h1>
+
+<%= form_for @image do |image| %>
+名前 : <%= image.text_field :name %>
+写真 : <%= image.file_field :image,accept: 'image/jpeg' %>
+<%= image.submit "登録する" %>
+<% end %>
