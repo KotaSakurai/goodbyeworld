@@ -1,6 +1,8 @@
 class ImagesController < ApplicationController
     def index
       @images = Image.all
+      @judge_men_count = Judge.where(gender:0).count
+      @judge_women_count = Judge.where(gender:1).count
     end
 
     def create
