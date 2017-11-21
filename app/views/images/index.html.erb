@@ -3,7 +3,14 @@
 <h2>別れたカップルのLINEスクショ投稿サイトです</h2>
 
 <% @images.each do |i| %>
-<p><%= i.name %></p>
-<img src = <%= i.image %>>
-
+  <div class="image_contents">
+    <p><%= i.name %></p>
+    <img src = <%= i.image %>>
+    <span>
+      <%= link_to 'men',judges_path(judge:{image_id:i.id, gender:0}), method::post %>
+      <p><%= @judge_men_count %></p>
+      <%= link_to 'women',judges_path(judge:{image_id:i.id, gender:1}), method::post %>
+      <P><%= @judge_women_count %></P>
+    </span>
+  </div>
 <% end %>
