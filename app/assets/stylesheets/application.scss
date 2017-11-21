@@ -18,10 +18,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-#header {
+
+.header {
     background-color: #ffe080; /* ヘッダの背景色 */
     }
-#imagesize{
+.imagesize{
     width : 600px;
     height : 900px;
 }
