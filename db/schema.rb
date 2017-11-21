@@ -26,4 +26,9 @@ ActiveRecord::Schema.define(version: 20171120084340) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "bads", force: :cascade do |t|
+    t.integer "image_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
 end
