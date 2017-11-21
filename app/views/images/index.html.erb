@@ -1,9 +1,18 @@
+<div id="header">
+    GoodbyeWorld!
+</div>
+<div id="explain">
+    別れたLINEのスクリーンショットを共有するサイト
+</div>
+    
 
-<h1>Goodbye World!!</h1><br>
-<h2>別れたカップルのLINEスクショ投稿サイトです</h2>
 
 <% @images.each do |i| %>
 <p><%= i.name %></p>
-<img src = <%= i.image %>>
+<img id="imagesize" src = <%= i.image %>>
 
 <% end %>
+
+
+
+
