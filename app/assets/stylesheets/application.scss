@@ -14,11 +14,5 @@
  *= require_self
  */
 
-
- .header {
-    background-color: #ffe080; /* ヘッダの背景色 */
-    }
-.imagesize{
-    width : 600px;
-    height : 900px;
-}
+@import "bootstrap-sprockets";
+@import "bootstrap";
