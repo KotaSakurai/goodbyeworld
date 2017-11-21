@@ -7,12 +7,12 @@ class JudgesController < ApplicationController
     @judge = Judge.new(judge_params)
     if @judge.save
       redirect_to root_path
-  end
+    end
   end
 
   private
-  def judge_params
-    params.require(:judge).permit(:image_id, :gender)
-  end
+    def judge_params
+      params.require(:judge).permit(:image_id, :gender)
+    end
 
 end

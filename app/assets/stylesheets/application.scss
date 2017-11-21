@@ -20,9 +20,48 @@
 
 
 .header {
-    background-color: #ffe080; /* ヘッダの背景色 */
-    }
+  background-color: #ffe080; /* ヘッダの背景色 */
+}
 .imagesize{
-    width : 600px;
-    height : 900px;
+  width : 600px;
+  height : 900px;
+}
+
+.center {
+  text-align: center;
+}
+
+.mg-center {
+  margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+}
+
+.image-title {
+  background-color: white;
+}
+
+.image_contents {
+  text-align: center;
+  background-color: #dddddd;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.contents {
+  background-color: white;
+  padding: 20px;
+}
+
+.clrW {
+  color: white;
+}
+
+.mg-b {
+  margin-bottom: 20px;
 }
