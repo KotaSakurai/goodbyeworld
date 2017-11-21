@@ -6,7 +6,7 @@ class JudgesController < ApplicationController
   def create
     @judge = Judge.new(judge_params)
     if @judge.save
-    redirect_to root_path
+      redirect_to root_path
   end
   end
 
